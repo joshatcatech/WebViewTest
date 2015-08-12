@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WebViewTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear_action">Clear Cookies</string>
+    <string name="show_cookies">Show Cookies</string>
+    <string name="clear_history">Clear History</string>
+    <string name="refresh">Reload</string>
+    <string name="cookie_name">caEnterpriseBrowserDemoCookie</string>
+</resources>

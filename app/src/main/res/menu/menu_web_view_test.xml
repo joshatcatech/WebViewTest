@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".WebViewTest">
+    <item android:id="@+id/back" android:icon="@drawable/back"
+        android:orderInCategory="1" app:showAsAction="always" />
+    <item android:id="@+id/clearCache" android:title="@string/clear_action"
+        android:orderInCategory="5" app:showAsAction="never" />
+    <item android:id="@+id/forward" android:icon="@drawable/forward"
+        android:orderInCategory="2" app:showAsAction="always" />
+    <item android:id="@+id/showCookies" android:title="@string/show_cookies"
+        android:orderInCategory="6" app:showAsAction="never" />
+    <item android:id="@+id/refresh" android:title="@string/refresh"
+        android:orderInCategory="3" app:showAsAction="always" />
+    <item android:id="@+id/clearHistory" android:title="@string/clear_history"
+        android:orderInCategory="4" app:showAsAction="never" />
+</menu>

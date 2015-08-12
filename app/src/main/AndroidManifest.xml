@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.casso.webviewtest"
+    android:sharedUserId="com.casso.apps">
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/aa_browser"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.casso.webviewtest.EnterpriseBrowserLauncher"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:label="WebViewTest"
+            android:icon="@drawable/aa_browser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.l7tech.msso.gui.LogonActivity"
+            android:theme="@android:style/Theme.Holo.Dialog"
+            android:label="Log On"
+            android:windowSoftInputMode="stateVisible"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.l7tech.msso.service.action.OBTAIN_CREDENTIALS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.casso.webviewtest.EnterpriseBrowser"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:label="WebViewTest"
+            android:icon="@drawable/aa_browser">
+            <intent-filter>
+                <action android:name="com.l7tech.msso.service.action.LAUNCH_ENTERPRISE_BROWSER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.casso.webviewtest.WebViewTest"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.l7tech.msso.service.action.RENDER_WEBVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.l7tech.msso.service.MssoService"
+            android:exported="false">
+        </service>
+    </application>
+</manifest>
